@@ -1,1 +1,1 @@
-{"path":"Automation Anywhere\\Bots\\aa-challenge\\bot1","manualDependencies":[],"scannedDependencies":[]}
+{"path":"Automation Anywhere\\Bots\\aa-challenge\\bot1","manualDependencies":["Automation Anywhere\\Bots\\aa-challenge\\childbot1"],"scannedDependencies":[]}

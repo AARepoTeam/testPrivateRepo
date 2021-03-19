@@ -1,0 +1,7 @@
+crdatagen.exe --controlroom http://newtd-autodeploy-312549024.us-west-2.elb.amazonaws.com --user autodeploy\cradmin0000 --password 652714c41ad525! test-data add-folder-specific-roles --nameprefix td1repo --count 3000 --subfoldercount 100 --hopper --public
+
+
+
+
+
+crdatagen.exe --controlroom http://localhost:81 --user admin --password Automation123 test-data add-folder-specific-roles --nameprefix td1repo --count 3000 --subfoldercount 100 --hopper --publiccrdatagen.exe --controlroom http://localhost:81 --user admin --password Automation123 test-data add-folder-specific-roles --nameprefix td1repo --count 3000 --subfoldercount 100 --hopper --public

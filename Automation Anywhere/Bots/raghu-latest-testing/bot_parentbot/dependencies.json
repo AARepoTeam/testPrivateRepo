@@ -1,1 +1,1 @@
-{"path":"Automation Anywhere\\Bots\\raghu-latest-testing\\parentbot","manualDependencies":[],"scannedDependencies":[]}
+{"path":"Automation Anywhere\\Bots\\raghu-latest-testing\\parentbot","manualDependencies":[],"scannedDependencies":["Automation Anywhere\\Bots\\raghu-latest-testing\\childbot"]}

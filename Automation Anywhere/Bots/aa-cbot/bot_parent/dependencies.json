@@ -1,1 +1,1 @@
-{"path":"Automation Anywhere\\Bots\\aa-cbot\\parent","manualDependencies":[],"scannedDependencies":[]}
+{"path":"Automation Anywhere\\Bots\\aa-cbot\\parent","manualDependencies":["Automation Anywhere\\Bots\\aa-cbot\\apple\\apple-child"],"scannedDependencies":[]}

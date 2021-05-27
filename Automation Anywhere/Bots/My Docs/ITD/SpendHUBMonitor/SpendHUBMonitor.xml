@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SpendHUBMonitor>
+     <CommonVariables>
+	 <DEV>
+        <vURL>https://mapibm040.bsci.bossci.com:9444/bpc/faces/pages/Login.jsp</vURL>
+		<vEmailTo>rushil.patel@bsci.com</vEmailTo>
+		<vEmailFrom>itd.dev06@bsci.com</vEmailFrom>
+	 </DEV>
+	 <TST>
+        <vURL>https://mapibm040.bsci.bossci.com:9444/bpc/faces/pages/Login.jsp</vURL>
+		<vEmailTo>vijaya.movva@bsci.com;karishma.chauhan@bsci.com;ankit.kaushal@bsci.com;rushil.patel@bsci.com</vEmailTo>
+		<vEmailFrom>itd.tst01@bsci.com</vEmailFrom>
+	 </TST>
+	 <PRD>
+        <vURL>https://mapibm026.bsci.bossci.com:9444/bpc/faces/pages/Login.jsp</vURL>
+		 <vEmailTo>vijaya.movva@bsci.com;karishma.chauhan@bsci.com;ankit.kaushal@bsci.com</vEmailTo>
+		<vEmailFrom>RPA_IT@bsci.com</vEmailFrom>
+	 </PRD>
+      	<vSharedPath>\\natfile01\depts\ADMS\BOT Job Monitoring\</vSharedPath>
+    	<vMinDelay>5</vMinDelay>
+   		<vMediumDelay>20</vMediumDelay>
+   		<vMaxDelay>50</vMaxDelay>
+		<vTaskName>SpendHUBMonitor</vTaskName>
+		<vWindowTitle>Business Process Choreographer Explorer * Microsoft​ Edge</vWindowTitle>
+		<v2ndWindowTitle>Business Process Choreographer Explorer * Microsoft​ Edge</v2ndWindowTitle>
+        <vEmailTo>rushil.patel@bsci.com</vEmailTo>
+		<vEmailFrom>RPA_IT@bsci.com,itd.dev06@bsci.com</vEmailFrom>
+		<vWorkingDays>5,23</vWorkingDays>
+     </CommonVariables>
+	 <JobDetails>
+	    <SH_BW_HCP_Spend>
+			 <JobScheduleTime>22;</JobScheduleTime>
+			 <JobBufferTime>4</JobBufferTime>
+			 <JobDay>Monday;Tuesday;Wednesday;Thursday;Friday;Sunday</JobDay>
+		</SH_BW_HCP_Spend>
+		<MDM_InactivationRoutine>
+			 <JobScheduleTime>20;</JobScheduleTime>
+			 <JobBufferTime>4</JobBufferTime>
+			 <JobDay>Monday;Tuesday;Wednesday;Thursday;Friday</JobDay>
+		</MDM_InactivationRoutine>
+		<HMS_MDM_HCPMaster>
+			 <JobScheduleTime>20;</JobScheduleTime>
+			 <JobBufferTime>7</JobBufferTime>			 
+		</HMS_MDM_HCPMaster>
+		<MDM_HMS_HCPId>
+			 <JobScheduleTime>20;</JobScheduleTime>
+			 <JobBufferTime>7</JobBufferTime>			 
+		</MDM_HMS_HCPId>
+		<SH_ETL_HCP_Spend>
+			 <JobScheduleTime>19;</JobScheduleTime>
+			 <JobBufferTime>35</JobBufferTime>
+			 <JobDay>Monday;Tuesday;Wednesday;Thursday;Friday</JobDay>
+		</SH_ETL_HCP_Spend>
+		<MDM_BW_HCP>
+			 <JobScheduleTime>19;</JobScheduleTime>
+			 <JobBufferTime>26</JobBufferTime>
+			 <JobDay>Monday;Tuesday;Wednesday;Thursday;Friday</JobDay>
+		</MDM_BW_HCP>
+		<MDM-CONCUR_HCP>
+			 <JobScheduleTime>14;</JobScheduleTime>
+			 <JobBufferTime>35</JobBufferTime>
+			 <JobDay>Monday;Tuesday;Wednesday;Thursday;Friday;Sunday</JobDay>
+		</MDM-CONCUR_HCP>
+		<TER_Inbound_Process>
+			 <JobScheduleTime>13;</JobScheduleTime>
+			 <JobBufferTime>35</JobBufferTime>
+			 <JobDay>Monday;Tuesday;Wednesday;Thursday;Friday</JobDay>
+		</TER_Inbound_Process>
+		<SAP_SH_PaymentConfirm>
+			 <JobScheduleTime>2;11;</JobScheduleTime>
+			 <JobBufferTime>28</JobBufferTime>
+			 <JobDay>Monday;Tuesday;Wednesday;Thursday;Friday;Saturday</JobDay>
+		</SAP_SH_PaymentConfirm>
+		<BW_SH_ReferenceData>
+			 <JobScheduleTime>6;</JobScheduleTime>
+			 <JobBufferTime>4</JobBufferTime>
+			 <JobDay>Monday;Tuesday;Wednesday;Thursday;Friday</JobDay>
+		</BW_SH_ReferenceData>
+		<TER_Outbound_Process>
+			 <JobScheduleTime>1;</JobScheduleTime>
+			 <JobBufferTime>34</JobBufferTime>
+			 <JobDay>Tuesday;Wednesday;Thursday;Friday</JobDay>
+		</TER_Outbound_Process>
+		<MDM_SH_HCPMaster>
+			 <JobScheduleTime>1;</JobScheduleTime>
+			 <JobBufferTime>28</JobBufferTime>
+			 <JobDay>Monday;Tuesday;Wednesday;Thursday;Friday</JobDay>
+		</MDM_SH_HCPMaster>
+		<SAP_SH_PaymentInvoiceConfirm>
+			 <JobScheduleTime>6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;</JobScheduleTime>
+			 <JobBufferTime>6</JobBufferTime>
+			 <JobDay>Monday;Tuesday;Wednesday;Thursday;Friday</JobDay>
+		</SAP_SH_PaymentInvoiceConfirm>
+		<SH_SAP_PaymentRequest>
+			 <JobScheduleTime>6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;</JobScheduleTime>
+			 <JobBufferTime>6</JobBufferTime>
+			 <JobDay>Monday;Tuesday;Wednesday;Thursday;Friday</JobDay>
+		</SH_SAP_PaymentRequest>
+	 </JobDetails>
+     <Emails>
+     <Email Name="Exception">
+<![CDATA[
+
+Dear User,
+
+Please be informed that bot has found the job name {vJobname} is being stuck. please investigate this {vJobname}
+
+
+Thanks]]>
+</Email>
+     <Email Name="Success">
+<![CDATA[
+
+Dear User,
+
+Please be informed that bot has Successsfully completed the run.
+
+Thanks]]>
+</Email>
+</Emails>          
+</SpendHUBMonitor>

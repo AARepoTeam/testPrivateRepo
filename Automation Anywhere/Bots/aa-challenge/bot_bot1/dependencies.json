@@ -1,1 +1,1 @@
-{"path":"Automation Anywhere\\Bots\\aa-challenge\\bot1","manualDependencies":["Automation Anywhere\\Bots\\aa-challenge\\childbot1","Automation Anywhere\\Bots\\aa-challenge\\assign\\work-child-1","Automation Anywhere\\Bots\\aa-challenge\\assign\\work-child-12"],"scannedDependencies":[]}
+{"path":"Automation Anywhere\\Bots\\aa-challenge\\bot1","manualDependencies":["Automation Anywhere\\Bots\\aa-challenge\\assign\\work-child-12","Automation Anywhere\\Bots\\aa-challenge\\assign\\work-child-1","Automation Anywhere\\Bots\\aa-challenge\\childbot1"],"scannedDependencies":[]}

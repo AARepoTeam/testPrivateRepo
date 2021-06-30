@@ -1,0 +1,314 @@
+<Config>
+	<Log> 
+		<FilePath>Automation Anywhere\My Docs\CSC\GFIS\DTE\Logs</FilePath>
+		<FilePathRPA>\\lasafs\DADOSGERAL\GESTAO-CSC\Gestao de Servicos\RPA\GFIS\DTE\Log</FilePathRPA>
+		<FileName>log_[year]_[month]_[day].txt</FileName>
+		<PrintScreen>[TASK]_[day]_[month]_[year]_[hour]_[minute]_[second].png</PrintScreen>
+	</Log>
+	<Folders> 
+		<Path>
+			<MyDocs>Automation Anywhere\My Docs\CSC\GFIS\DTE</MyDocs>
+			<MyTasks>Automation Anywhere\My Tasks\CSC\GFIS\DTE</MyTasks>
+			<G_DTE>\\lasafs\DADOSGERAL\GESTAO-CSC\Gestao de Servicos\RPA\GFIS\DTE</G_DTE>
+			<G_ErrorHandling>\\lasafs\DADOSGERAL\GESTAO-CSC\Gestao de Servicos\RPA\GFIS\DTE\Error Handling</G_ErrorHandling>
+			<G_Area>\\lasafs\DADOSGERAL\DadosCentralFiscal\DTE RPA</G_Area>
+			<FolderMY>[month]_[year]</FolderMY>
+			<FolderDMY>[day]_[month]_[year]</FolderDMY>
+			<PastaIndicadores>\\lasafs\DADOSGERAL\GESTAO-CSC\Gestao de Servicos\RPA\Indicadores\GFIS\</PastaIndicadores>
+		</Path>
+	</Folders>
+	<Sheets>
+		<Name>
+			<Output>Output_DTE.xlsx</Output>
+			<UltimaExecucao>Ultima_Execução_DTE.xlsx</UltimaExecucao>
+			<Input>Input_DTE.xlsx</Input>
+			<!--<Indicadores>Indicadores_DTE.xlsx</Indicadores>-->
+			<Indicadores>Indicadores_GFIS-Ler_Mensagem_DTE_[year]</Indicadores>
+		</Name>
+	</Sheets>
+	<Cert>
+		<Marcia>MARCIA CRISTINA DELGADO DE ALMEIDA BALSA:08305696774</Marcia>
+		<Raphaela>RAPHAELA LEMOS DECNOP TARDELLI GARCIA:09322950706</Raphaela>
+		<Flavia>FLAVIA PEREIRA CARNEIRO MOTA:04296781774</Flavia>
+	</Cert>
+	<url>
+		<DF>https://www2.agencianet.fazenda.df.gov.br/Inicio/Restrita</DF>
+		<ES>http://app.sefaz.es.gov.br/dbsit1403_agencia_virtual</ES>
+		<CE>https://portal-dte.apps.sefaz.ce.gov.br/#/certificado</CE>
+		<RJ>http://www4.fazenda.rj.gov.br/ssa/?appf=DEC</RJ>
+		<SP>https://www.dec.fazenda.sp.gov.br/DEC/UCLogin/login.aspx</SP>
+		<BA>https://sistemasweb.sefaz.ba.gov.br/sistemas/DTE/Contribuinte/SSL/ASLibrary/Login?ReturnUrl=%2fsistemas%2fDTE%2fContribuinte</BA>
+		<PI>http://webas.sefaz.pi.gov.br/eageat/jsp/login/login.jsf?codigoCliente=d74b0c7f01a2f7d9bf2d3bcee0681523</PI>
+		<AM>https:c/online.sefaz.am.gov.br/dte/sel_inscricao_pf.asp?r=</AM>
+		<RO>https://www.sefin.ro.gov.br</RO>
+		<MA>https://sistemas.sefaz.ma.gov.br/sefaznet/login.do?method=prepareLogin</MA>
+		<PR>https://receita.pr.gov.br/login</PR>
+		<PA>https://app.sefa.pa.gov.br/pservicos/autenticacao?servico=https://app.sefa.pa.gov.br/domicilio-eletronico/index.jsp</PA>
+		<SC>https://tributario.sef.sc.gov.br/tax.NET/Login.aspx?ReturnUrl=%2ftax.net%2fdefault.aspx#http://www.sef.sc.gov.br/servicos/assunto/33/DTEC_-_Domicílio_Tributário_Eletrônico_do_Contribuin</SC>
+        <PB>https://www.sefaz.pb.gov.br/</PB>
+	</url>
+	<Attachment> 
+		<Year>[year]</Year>
+		<Month>;[month]</Month>
+		<Day>;[day]</Day>
+		<Area>;GFIS</Area>
+		<Process>;DTE</Process>
+		<Task>;[TASK]</Task>
+		<Amount>;[QUANTIDADE]</Amount>
+		<Unity>;Mensagens</Unity>
+		<Hour>;[hour]:[minute]:[second]</Hour>
+	</Attachment>
+	<Email>
+		<From>rpa_csc1@lasa.com.br</From>
+
+		
+		<To>;central.fiscal7@lasa.com.br</To>
+		<Cc>;gizeli.helena@lasa.com.br,elisabete.araujo@lasa.com.br,raissa.santos@lasa.com.br,camila.almeida@lasa.com.br,TI_RPA@lasa.com.br,jralmeida@lasa.com.br,GSERProjetos@LojasAmericanas.onmicrosoft.com,felipe.cavalcanti.contratada@lasa.com.br</Cc>
+		<!--
+		<To>;jralmeida@lasa.com.br</To>
+		<Cc>;</Cc>
+ 		-->
+		<Bcc>;</Bcc>
+		<Subject>;[RPA] [TASK] - [FUNCAO]</Subject>
+		<Attachment>;</Attachment>
+	</Email>
+	<Message>
+		<Success-01>
+Prezados,
+
+A leitura das mensagens de DTE para o estado do [ESTADO] foi finalizada. As mensagens bem como a planilha de preenchimento foram salvas no diretório [G_DTE]\[ESTADO]\ANO_[year]\[month]_[year]\[day]_[month]_[year].
+
+Favor acessar a pasta para ciência da atividade.
+
+Favor não responder. Caixa de e-mail não monitorada.
+
+Robotic Process Automation (RPA)
+Centro de Serviços Compartilhados - CSC
+Lojas Americanas S.A. | B2W Digital
+		</Success-01>
+		<NoMessage-02>;	
+Prezados,
+
+A leitura das mensagens de DTE para o estado do [ESTADO] foi finalizada e não existem mensagens.
+
+Favor não responder. Caixa de e-mail não monitorada.
+
+Robotic Process Automation (RPA)
+Centro de Serviços Compartilhados - CSC
+Lojas Americanas S.A. | B2W Digital
+		</NoMessage-02>
+		<Fail-03>;
+Prezados,
+
+Ocorreu um erro no processo do DTE para [ESTADO].
+
+=> ERRO: Planilha [PLANILHA] não encontrada.
+
+Favor verificar se essa planilha existe no diretório.
+
+Favor não responder. Caixa de e-mail não monitorada.
+
+Robotic Process Automation (RPA)
+Centro de Serviços Compartilhados - CSC
+Lojas Americanas S.A. | B2W Digital
+		</Fail-03>
+		<QtdDivergente-04>;
+Prezados,
+
+Foi encontrada uma divergencia na quantidade de registros na planilha de Input.
+Há [QTD1] lojas na planilha de Input e [QTD2] na SEFAZ.
+
+Favor não responder. Caixa de e-mail não monitorada.
+
+Robotic Process Automation (RPA)
+Centro de Serviços Compartilhados - CSC
+Lojas Americanas S.A. | B2W Digital
+		</QtdDivergente-04>
+		<CNPJInvalido-05>;
+Prezados,
+
+O CNPJ [CNPJ] não foi encontrado no Portal SEFAZ.
+
+
+Favor não responder. Caixa de e-mail não monitorada.
+
+Robotic Process Automation (RPA)
+Centro de Serviços Compartilhados - CSC
+Lojas Americanas S.A. | B2W Digital
+		</CNPJInvalido-05>
+		<Pendencias-06>;
+Prezados,
+
+A leitura das mensagens de DTE para o estado do [ESTADO] encontrou pendências na Insrição [ESTADO].
+Favor acessar o DT-e para maiores informações sobre a pendência.
+
+Favor não responder. Caixa de e-mail não monitorada.
+
+Robotic Process Automation (RPA)
+Centro de Serviços Compartilhados - CSC
+Lojas Americanas S.A. | B2W Digital
+		</Pendencias-06>
+		<informacoes-07>;
+Prezados,
+
+A leitura das mensagens de DTE para o estado do [ESTADO] encontrou mensagens com assunto “Informação” na Inscrição [ESTADO]
+Favor acessar o DT-e para maiores informações sobre a mensagem
+
+Favor não responder. Caixa de e-mail não monitorada.
+
+Robotic Process Automation (RPA)
+Centro de Serviços Compartilhados - CSC
+Lojas Americanas S.A. | B2W Digital
+		</informacoes-07>
+		<ErroSalvarMensagem-08>;
+Prezados,
+
+Ocorreu uma erro ao salvar uma mensagem para o CNPJ/Inscrição Estadual [CNPJ].
+
+Favor conferir as mensagens deste CNPJ no site, pois é provável que tenha dado ciência.
+
+
+Não responder este e-mail. Caixa não monitorada.
+
+Robotic Process Automation (RPA)
+Centro de Serviços Compartilhados - CSC
+Lojas Americanas S.A. | B2W Digital
+		</ErroSalvarMensagem-08>
+		<FalhaPI-09>;
+Prezados,
+
+Não foi possível acessar o site http://webas.sefaz.pi.gov.br/eageat/jsp/login/login.jsf?codigoCliente=d74b0c7f01a2f7d9bf2d3bcee0681523 
+
+Não responder este e-mail. Caixa não monitorada.
+
+Robotic Process Automation (RPA)
+Centro de Serviços Compartilhados - CSC
+Lojas Americanas S.A. | B2W Digital
+		</FalhaPI-09>
+		<FalhaPI-10>;
+Prezados,
+
+Não foi possível executar a tarefa pois o assinador não está ativo. Favor verificar o motivo do pragarama e-GEAT não ter sido aberto. 
+
+Não responder este e-mail. Caixa não monitorada.
+
+Robotic Process Automation (RPA)
+Centro de Serviços Compartilhados - CSC
+Lojas Americanas S.A. | B2W Digital
+		</FalhaPI-10>
+		<FalhaPI-11>;
+Prezados,
+
+Não foi possível selecionar o certificado Flávia Pereira Carneiro Mota. Favor verificar. 
+
+Não responder este e-mail. Caixa não monitorada.
+
+Robotic Process Automation (RPA)
+Centro de Serviços Compartilhados - CSC
+Lojas Americanas S.A. | B2W Digital
+		</FalhaPI-11>
+		<ErroLogin-12>;
+Prezados,
+
+Não foi possível efetuar login, favor verificar possíveis causas.
+
+Favor não responder. Caixa de e-mail não monitorada.
+
+Robotic Process Automation (RPA)
+Centro de Serviços Compartilhados - CSC
+Lojas Americanas S.A. | B2W Digital
+		</ErroLogin-12>
+		<!-- ALTERAÇÃO NO MODO DE CARREGAMENTO DAS MENSAGENS -->
+		<TagPv>;</TagPv>
+		<ErrorLogin>
+Prezados,
+
+Não foi possível realizar a leitura das mensagens de DTE para o estado de [ESTADO], pois ocorreu uma falha no login.
+
+Favor não responder. Caixa de e-mail não monitorada. 
+
+Robotic Process Automation (RPA)
+Centro de Serviços Compartilhados - CSC
+Lojas Americanas S.A. | B2W Digital
+        </ErrorLogin>
+        <Success>
+Prezados,
+
+A leitura das mensagens de DTE para o estado do [ESTADO] foi finalizada. As mensagens bem como a planilha de preenchimento foram salvas no diretório [G_AREA]\[ESTADO]\ANO_[year]\[month]_[year]\[day]_[month]_[year].
+
+Favor acessar a pasta para ciência da atividade.
+
+Favor não responder. Caixa de e-mail não monitorada.
+
+Robotic Process Automation (RPA)
+Centro de Serviços Compartilhados - CSC
+Lojas Americanas S.A. | B2W Digital
+		</Success>
+		<NoMessage>	
+Prezados,
+
+A leitura das mensagens de DTE para o estado do [ESTADO] foi finalizada e não existem mensagens.
+
+Favor não responder. Caixa de e-mail não monitorada.
+
+Robotic Process Automation (RPA)
+Centro de Serviços Compartilhados - CSC
+Lojas Americanas S.A. | B2W Digital
+		</NoMessage>
+		<ErroOutput>
+Prezados,
+
+Ocorreu um erro no processo do DTE para [ESTADO].
+
+=> ERRO: Planilha [PLANILHA] não encontrada.
+
+Favor verificar se essa planilha existe no diretório.
+
+Favor não responder. Caixa de e-mail não monitorada.
+
+Robotic Process Automation (RPA)
+Centro de Serviços Compartilhados - CSC
+Lojas Americanas S.A. | B2W Digital
+		</ErroOutput>
+		<ErroSalvarMensagem>
+Prezados,
+
+Ocorreu uma erro ao salvar uma mensagem para o CNPJ/Inscrição Estadual [CNPJ].
+
+Favor conferir as mensagens deste CNPJ no site, pois é provável que tenha dado ciência.
+
+
+Não responder este e-mail. Caixa não monitorada.
+
+Robotic Process Automation (RPA)
+Centro de Serviços Compartilhados - CSC
+Lojas Americanas S.A. | B2W Digital
+		</ErroSalvarMensagem>
+		<ErroTentativaLogin>
+Prezados,
+
+Não foi possível realizar login no perfil [CPF].
+
+Caso o problema seja alteração de senha, favor informar o CoE RPA.
+
+
+Não responda. Caixa de e-mail não monitorada.
+
+Robotic Process Automation (RPA)
+Centro de Serviços Compartilhados - CSC
+Lojas Americanas S.A. | B2W Digital
+		</ErroTentativaLogin>
+		<AnexoPA>
+Prezados,
+
+A IE [IENUM], possui mensagem com anexo.
+Por favor acesse a mesma para baixa-lo.
+
+Nao responda. Caixa de e-mail nao monitorada.
+
+Robotic Process Automation (RPA)
+Centro de Serviços Compartilhados - CSC
+Lojas Americanas S.A. | B2W Digital
+		</AnexoPA>
+	</Message>
+</Config>

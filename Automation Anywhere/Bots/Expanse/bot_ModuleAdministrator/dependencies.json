@@ -1,1 +1,1 @@
-{"path":"Automation Anywhere\\Bots\\Expanse\\ModuleAdministrator","manualDependencies":[],"scannedDependencies":["Automation Anywhere\\Bots\\Expanse\\ComboBoxDataSource","Automation Anywhere\\Bots\\Expanse\\Forms\\Frm_ModuleAdministrator"]}
+{"path":"Automation Anywhere\\Bots\\Expanse\\ModuleAdministrator","manualDependencies":[],"scannedDependencies":["Automation Anywhere\\Bots\\Expanse\\Forms\\Frm_ModuleAdministrator","Automation Anywhere\\Bots\\Expanse\\ComboBoxDataSource"]}
